@@ -20,7 +20,7 @@
         <div>
             <label>Email address*</label>
             <div>
-                <input type="email"  name="email" id="emailStr" required>
+                <input method='post' type="email"  name="email" id="emailStr" required>
             </div>
         </div>
 
@@ -28,10 +28,11 @@
         <div>
             <label>Password*</label>
             <div class="input-group">
-                <input type="password"  name="password" minlength="6">
+                <input method='post' type="password"  name="password" minlength="6">
             </div>
         </div>
-        
+        <label>bio</label>
+        <input method='post' name='bio' maxlength='280'>
         <!-- Button -->
         <div>
             <input type="submit"/>
