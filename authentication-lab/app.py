@@ -65,7 +65,7 @@ def add_tweet():
         return redirect(url_for('signin'))
     if request.method == 'POST':
         title = request.form['title']
-        tweet = request.form['tweet']
+        tweet = request.form['tweet']   
         posts = {"UID":UID, 'title':title,"tweet":tweet}
         db.child('tweets').push(posts)
     
